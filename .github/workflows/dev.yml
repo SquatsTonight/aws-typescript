@@ -24,7 +24,6 @@ env:
   PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
   PULUMI_STACK_NAME: serverless/aws-typescript/dev
   PULUMI_WORKING_DIRECTORY: ./
-  PULUMI_CREDENTIALS_PATH: /github/home/.pulumi
 
 jobs:
   pulumi:
@@ -57,10 +56,10 @@ jobs:
           # yarn install --cwd $PULUMI_WORKING_DIRECTORY
 
       - name: PR previews
-        run: sudo pulumi preview -s $PULUMI_STACK_NAME --cwd $PULUMI_WORKING_DIRECTORY
+        run: pulumi preview -s $PULUMI_STACK_NAME --cwd $PULUMI_WORKING_DIRECTORY
         if: ${{ github.event_name == 'pull_request' }}
 
       - name: Apply infrastructure update
-        run: sudo pulumi update --yes -s $PULUMI_STACK_NAME --cwd $PULUMI_WORKING_DIRECTORY
+        run: pulumi update --yes -s $PULUMI_STACK_NAME --cwd $PULUMI_WORKING_DIRECTORY
         if: ${{ github.event_name == 'push' }}
 
