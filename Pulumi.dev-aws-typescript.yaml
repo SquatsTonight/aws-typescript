@@ -1,1 +1,7 @@
 encryptionsalt: v1:ouQothNU5H8=:v1:wtJhTxHpP/YMZz9s:o8ZGx+z2ehNhbBiueQCtVVLbGlOfQA==
+config:
+  alicloud:accessKey:
+    secure: v1:CFSZGO7lxnpbj5JY:8IoTU0UaM/dqciQQuZnmQ7kv4c4ZUayUrdmdjkBgsNWbNn0LlHhmRw==
+  alicloud:region: cn-shanghai
+  alicloud:secretKey:
+    secure: v1:C13xvdk9ocujPpbC:Hvf1tqASj4Jcoy9YS8sWRGbfB/Gixl7FIiPl6iZX/nLwoXjB7vqoq1PQfXfoZQ==
