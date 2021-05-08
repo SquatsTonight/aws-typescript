@@ -1,0 +1,10 @@
+{
+    "name": "aws-typescript",
+    "devDependencies": {
+        "@types/node": "^10.0.0"
+    },
+    "dependencies": {
+        "@pulumi/pulumi": "^3.0.0",
+        "@pulumi/alicloud": "^2.37.0"
+    }
+}
