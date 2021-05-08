@@ -24,6 +24,7 @@ env:
   PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
   PULUMI_STACK_NAME: serverless/aws-typescript/dev
   PULUMI_WORKING_DIRECTORY: ./
+  PULUMI_CREDENTIALS_PATH: /github/home/.pulumi
 
 jobs:
   pulumi:
